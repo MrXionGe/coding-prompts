@@ -1,0 +1,7 @@
+interface:
+  display_name: "调试与修复"
+  short_description: "基于稳定复现与证据定位根因，实施可靠修复并完成回归验证"
+  default_prompt: "使用 $debug-and-fix 定位并修复这个问题，验证原始场景。"
+
+policy:
+  allow_implicit_invocation: false
