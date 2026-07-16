@@ -1,6 +1,6 @@
 interface:
   display_name: "Using Coding Workflows"
-  short_description: "按任务选择并组合 Spec 开发、自动化测试与调试修复工作流"
+  short_description: "按任务选择并组合 Spec 驱动开发、自动化测试及问题修复工作流"
   default_prompt: "使用 $using-coding-workflows 分析这项编码任务，并选择或组合合适的工作流。"
 
 policy:

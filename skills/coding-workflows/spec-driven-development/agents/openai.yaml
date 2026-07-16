@@ -1,6 +1,6 @@
 interface:
   display_name: "Spec 驱动开发"
-  short_description: "以 Spec、Plan 和适度 TDD 推进高质量开发与交付"
+  short_description: "以 Spec 为主线，结合 Plan、Todo 和必要的 TDD 推进开发"
   default_prompt: "使用 $spec-driven-development 按 Spec 对齐目标并完成这项开发任务。"
 
 policy:
