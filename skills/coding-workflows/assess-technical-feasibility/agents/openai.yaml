@@ -1,6 +1,6 @@
 interface:
-  display_name: "技术可行性评估"
-  short_description: "在开发前评估方案适配性、技术兼容性与关键风险，并给出结论"
+  display_name: "Assess Technical Feasibility"
+  short_description: "Assess technical fit, compatibility, and key risks"
   default_prompt: "使用 $assess-technical-feasibility 在开发前评估这个技术方案是否可行且合适。"
 
 policy:

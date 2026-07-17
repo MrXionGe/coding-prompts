@@ -1,9 +1,9 @@
 ---
 name: using-coding-workflows
-description: "为编码任务选择或组合技术可行性评估、Spec 驱动开发、自动化测试、调试与修复工作流。适用于需要判断工作流或涉及多个阶段的任务。"
+description: "Select or combine technical feasibility assessment, spec-driven development, automated testing, and debugging workflows for coding tasks. Use when choosing a workflow or coordinating multiple development stages."
 ---
 
-# Using Coding Workflows
+# 使用编码工作流
 
 根据任务的主要目标，选择最少且足够的技能，并加载对应说明：
 

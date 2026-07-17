@@ -1,6 +1,6 @@
 interface:
-  display_name: "调试与修复"
-  short_description: "稳定复现问题，依据证据定位根因，实施可靠修复并完成回归验证"
+  display_name: "Debug and Fix"
+  short_description: "Find root causes, apply reliable fixes, and verify regressions"
   default_prompt: "使用 $debug-and-fix 定位根因并修复问题，然后验证原始场景。"
 
 policy:

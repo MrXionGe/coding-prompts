@@ -1,6 +1,6 @@
 interface:
   display_name: "Using Coding Workflows"
-  short_description: "按任务选择并组合可行性评估、Spec 开发、自动化测试及问题修复工作流"
+  short_description: "Select and combine coding workflows for the task"
   default_prompt: "使用 $using-coding-workflows 分析这项编码任务，并选择或组合合适的工作流。"
 
 policy:

@@ -1,6 +1,6 @@
 ---
 name: test-functionality
-description: "围绕用户可观察行为开展自动化测试，覆盖功能、接口、UI 和交互。适用于功能验收、补充测试和回归检查。"
+description: "Validate user-observable behavior through automated tests covering functionality, APIs, UI, and interactions. Use for feature acceptance, test coverage, or regression checks."
 ---
 
 # 自动化测试

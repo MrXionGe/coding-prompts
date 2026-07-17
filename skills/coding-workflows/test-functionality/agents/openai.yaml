@@ -1,6 +1,6 @@
 interface:
-  display_name: "自动化测试"
-  short_description: "围绕可观察行为开展功能、接口、UI 与交互自动化测试"
+  display_name: "Test Functionality"
+  short_description: "Automate functional, API, UI, and interaction testing"
   default_prompt: "使用 $test-functionality 为这个功能设计并执行自动化测试。"
 
 policy:

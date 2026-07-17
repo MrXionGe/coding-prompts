@@ -1,6 +1,6 @@
 ---
 name: debug-and-fix
-description: "通过复现问题、收集证据和验证假设定位根因，实施可靠修复并进行回归验证。适用于 Bug、异常、失败测试及性能或环境问题。"
+description: "Find root causes by reproducing issues, gathering evidence, and testing hypotheses, then implement reliable fixes and regression checks. Use for bugs, exceptions, failing tests, performance regressions, or environment-specific problems."
 ---
 
 # 调试与修复

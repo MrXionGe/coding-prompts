@@ -1,6 +1,6 @@
 ---
 name: spec-driven-development
-description: "以 Spec 明确目标和验收标准，配合 Plan、Todo 和必要的 TDD 推进实现。适用于新项目、新功能和行为变更。"
+description: "Drive implementation from a Spec that defines goals and acceptance criteria, supported by a Plan, Todo list, and TDD when useful. Use for new projects, features, or behavior changes."
 ---
 
 # Spec 驱动开发

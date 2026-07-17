@@ -1,6 +1,6 @@
 ---
 name: assess-technical-feasibility
-description: "在开发前通过事实调研、兼容性分析和必要的最小实验评估技术方案是否可行且合适。适用于架构选型、跨技术集成、依赖兼容或存在重大技术不确定性的需求。"
+description: "Assess whether a technical approach is feasible and appropriate through evidence-based research, compatibility analysis, and minimal experiments. Use before development for architecture choices, cross-technology integration, dependency compatibility, or significant technical uncertainty."
 ---
 
 # 技术可行性评估
