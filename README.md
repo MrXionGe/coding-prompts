@@ -6,11 +6,12 @@
 
 - [`AGENTS.md`](AGENTS.md)：本机环境与通用工作约定。
 - `using-coding-workflows`：按任务选择或组合工作流。
+- `assess-technical-feasibility`：在开发前评估方案适配性、技术兼容性和关键风险。
 - `spec-driven-development`：以 Spec、Plan 和 Todo 推进开发，按风险补充测试。
 - `test-functionality`：围绕功能、接口、UI 和交互开展自动化测试。
 - `debug-and-fix`：通过复现和证据定位根因、修复并回归验证。
 
-`skills/coding-workflows` 是集合目录；其四个子目录才是可独立安装和调用的技能。
+`skills/coding-workflows` 是集合目录；其五个子目录才是可独立安装和调用的技能。
 
 ## 手动安装到 OpenCode
 
@@ -21,11 +22,11 @@
 - 项目级：目标项目根目录下的 `AGENTS.md`
 - 全局级：`%USERPROFILE%\.config\opencode\AGENTS.md`
 
-当前提示词描述的是本机环境，更适合作为全局规则。目标位置已有文件时应合并内容，不要直接覆盖。详见 [OpenCode 规则文档](https://opencode.ai/docs/zh-cn/rules/)。
+当前提示词描述的是本机环境，更适合作为全局规则。它写明了 Windows 11 和 `mise`；其他使用者应按实际环境调整后再安装。目标位置已有文件时应合并内容，不要直接覆盖。详见 [OpenCode 规则文档](https://opencode.ai/docs/zh-cn/rules/)。
 
 ### Skills
 
-将 `skills/coding-workflows` 下的四个子目录复制到以下任一位置：
+将 `skills/coding-workflows` 下的五个子目录复制到以下任一位置：
 
 - 项目级：`<project>\.opencode\skills\`
 - 全局级：`%USERPROFILE%\.config\opencode\skills\`
@@ -35,6 +36,7 @@
 ```text
 skills/
 ├── using-coding-workflows/
+├── assess-technical-feasibility/
 ├── spec-driven-development/
 ├── test-functionality/
 └── debug-and-fix/
