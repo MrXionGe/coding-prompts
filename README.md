@@ -7,7 +7,7 @@
 - [`AGENTS.md`](AGENTS.md)：本机环境与通用工作约定。
 - `using-coding-workflows`：按任务选择或组合工作流。
 - `assess-technical-feasibility`：在开发前评估方案适配性、技术兼容性和关键风险。
-- `spec-driven-development`：以 Spec、Plan 和 Todo 推进开发，按风险补充测试。
+- `spec-driven-development`：以 Spec 和 Plan 推进开发，按风险补充测试。
 - `test-functionality`：围绕功能、接口、UI 和交互开展自动化测试。
 - `debug-and-fix`：通过复现和证据定位根因、修复并回归验证。
 
