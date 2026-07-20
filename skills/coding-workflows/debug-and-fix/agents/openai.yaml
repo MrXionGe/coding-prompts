@@ -1,7 +1,0 @@
-interface:
-  display_name: "Debug and Fix"
-  short_description: "Find root causes, apply reliable fixes, and verify regressions"
-  default_prompt: "使用 $debug-and-fix 定位根因并修复问题，然后验证原始场景。"
-
-policy:
-  allow_implicit_invocation: false

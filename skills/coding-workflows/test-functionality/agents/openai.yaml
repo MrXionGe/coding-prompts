@@ -1,7 +1,0 @@
-interface:
-  display_name: "Test Functionality"
-  short_description: "Automate functional, API, UI, and interaction testing"
-  default_prompt: "使用 $test-functionality 为这个功能设计并执行自动化测试。"
-
-policy:
-  allow_implicit_invocation: false

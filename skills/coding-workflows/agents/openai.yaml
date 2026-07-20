@@ -1,0 +1,7 @@
+interface:
+  display_name: "Coding Workflows"
+  short_description: "Assess, develop, test, and debug code"
+  default_prompt: "使用 $coding-workflows 选择并执行合适的编码工作流。"
+
+policy:
+  allow_implicit_invocation: false

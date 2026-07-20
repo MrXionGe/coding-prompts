@@ -1,7 +1,0 @@
-interface:
-  display_name: "Spec-Driven Development"
-  short_description: "Drive development with Spec, Plan, and focused TDD"
-  default_prompt: "使用 $spec-driven-development 按 Spec 对齐目标并完成这项开发任务。"
-
-policy:
-  allow_implicit_invocation: false

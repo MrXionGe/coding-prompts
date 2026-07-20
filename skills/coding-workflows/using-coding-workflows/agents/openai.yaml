@@ -1,7 +1,0 @@
-interface:
-  display_name: "Using Coding Workflows"
-  short_description: "Select and combine coding workflows for the task"
-  default_prompt: "使用 $using-coding-workflows 分析这项编码任务，并选择或组合合适的工作流。"
-
-policy:
-  allow_implicit_invocation: false
