@@ -5,13 +5,13 @@
 ## 内容
 
 - [`AGENTS.md`](AGENTS.md)：本机环境与通用工作约定。
-- [`coding-workflows`](skills/coding-workflows/)：一个可独立安装和调用的编码工作流 Skill，包含四个方向：
+- [`coding-workflows`](skills/coding-workflows/)：一个可独立安装和调用的约束型编码工作流 Skill，包含四个方向：
   - 技术可行性评估：在开发前判断方案适配性、技术兼容性和关键风险。
-  - Spec 驱动开发：以轻量 Spec 和 Plan 推进实现，按风险补充测试。
+  - 开发：以轻量目标和验收标准推进实现，按风险补充测试。
   - 功能测试：围绕功能、接口、UI 和交互开展自动化验证。
   - 调试与修复：通过复现和证据定位根因、聚焦修复并回归验证。
 
-四个方向统一写在一个 `SKILL.md` 中，由模型根据任务自行选择、裁剪和组合。在 Codex 中，该 Skill 已禁止隐式触发，需使用 `$coding-workflows` 手动调用。
+该 Skill 先约束授权边界和通用执行流程，再由模型根据任务选择所需方向。对已能稳定完成 agentic coding 的模型可以不调用；对需要额外流程约束的模型手动调用。在 Codex 中，该 Skill 已禁止隐式触发，需使用 `$coding-workflows` 手动调用。
 
 ## 手动安装到 OpenCode
 
