@@ -11,7 +11,37 @@
   - 功能测试：围绕功能、接口、UI 和交互开展自动化验证。
   - 调试与修复：通过复现和证据定位根因、聚焦修复并回归验证。
 
-该 Skill 先约束授权边界和通用执行流程，再由模型根据任务选择所需方向。对已能稳定完成 agentic coding 的模型可以不调用；对需要额外流程约束的模型手动调用。在 Codex 中，该 Skill 已禁止隐式触发，需使用 `$coding-workflows` 手动调用。
+默认使用模型原生编码能力；当任务需要更严格的范围控制、证据要求或交付规范时，显式调用 `coding-workflows`。是否调用取决于任务需要，而非模型代际；GPT-6 等模型也可按需使用。在 Codex 中，该 Skill 已禁止隐式触发，使用 `$coding-workflows` 手动调用。
+
+Skill 根据当前请求和已有上下文判断授权，在授权范围内推进必要阶段；测试按风险收敛，修复失败后根据新证据决定是否继续。用户明确要求只评估、只诊断或不修改时，仍遵守该限制。
+
+## 手动安装到 Codex
+
+### 提示词
+
+将 [`AGENTS.md`](AGENTS.md) 合并到以下任一位置：
+
+- 全局级：`%USERPROFILE%\.codex\AGENTS.md`；设置了 `CODEX_HOME` 时，使用该目录下的 `AGENTS.md`。
+- 项目级：目标项目根目录下的 `AGENTS.md`。
+
+本仓库的环境约定更适合安装到本机全局配置。其他使用者应按实际环境调整，已有文件应合并而非覆盖；项目级规则应补充项目自己的构建、测试和业务约束。详见 [Codex AGENTS.md 文档](https://learn.chatgpt.com/docs/agent-configuration/agents-md)。
+
+### Skills
+
+将完整的 `skills/coding-workflows` 目录复制到以下任一位置：
+
+- 项目级：`<project>\.agents\skills\coding-workflows\`。
+- 用户级：`%USERPROFILE%\.agents\skills\coding-workflows\`。
+
+目标目录中应直接包含 `SKILL.md` 和 `agents/openai.yaml`，不要再嵌套一层 `coding-workflows`。目标已存在时先比较并合并本地定制。仓库中的 `skills/` 是分发目录，仅克隆仓库不会将其中的 Skill 自动安装到 Codex。
+
+安装后显式调用，例如：
+
+```text
+使用 $coding-workflows 修复登录失败的问题，完成相关验证。
+```
+
+若未出现新安装的 Skill，可重启 Codex 后重试。详见 [Codex Skills 文档](https://learn.chatgpt.com/docs/build-skills)。
 
 ## 手动安装到 OpenCode
 

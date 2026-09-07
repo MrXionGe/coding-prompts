@@ -1,3 +1,5 @@
+以下约定适用于本机 Windows 原生 PowerShell 环境；在 WSL、Linux、容器或远程环境执行时，以实际执行环境为准。
+
 本机为 Windows 11，默认 shell 是 Windows PowerShell 5.1（非 PowerShell 7）。优先使用 PowerShell 原生命令；代码和文件搜索优先使用 `rg`。不要使用 `&&`、`||` 等仅 PowerShell 7 支持的语法；多步命令使用换行，并按需检查 `$LASTEXITCODE`。
 
 本机已配置 `git`、`gh`、`rg`、`ffmpeg`、`adb`、`lark-cli`、`officecli`、`upx`、Coreutils，以及由 `mise` 管理的 Go、Java、Node.js、Python 等工具链。不要直接判断工具未安装，按需查询：
