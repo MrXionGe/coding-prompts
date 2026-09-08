@@ -1,7 +1,7 @@
 interface:
   display_name: "Coding Workflows"
-  short_description: "Constrain scope, evidence, and verification"
-  default_prompt: "使用 $coding-workflows 约束本次非简单编码任务，按授权、证据和验证门推进。"
+  short_description: "Control coding scope and verify results"
+  default_prompt: "使用 $coding-workflows 完成本次编码任务，控制范围并依据实际验证结果交付。"
 
 policy:
   allow_implicit_invocation: false
