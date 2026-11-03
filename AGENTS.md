@@ -1,7 +1,7 @@
-本机为 Windows 11；沿用 agent 当前 Shell，按实际执行环境编写命令。不确定时再检查 Shell / 版本，区分 PowerShell、Git Bash 与 WSL，不混用语法、路径或工具链。
+本机为 Windows 11。沿用当前 Shell，不确定时先确认类型和版本。跨 PowerShell、Git Bash 或 WSL 调用时，按两侧规则处理参数引用、变量展开和路径转换。
 
-- 搜索优先用 `rg`、`rg --files`。路径正确引用；跨 Shell 调用时注意参数展开与路径转换。
-- PowerShell 优先用原生 cmdlet；同名 Unix 命令可能是 Alias。5.1 不支持 `&&`、`||`。外部程序退出码用 `$LASTEXITCODE`，cmdlet 错误用 `-ErrorAction Stop` 等机制处理；Bash 按自身语法处理。依赖前步成功的操作须检查状态，不能仅用换行串联。
-- 保留文件编码、BOM 和换行。PowerShell 读取 UTF-8 时指定 `-Encoding UTF8`；注意 5.1 用该参数写入会添加 BOM。
-- 删除、递归移动或批量覆盖前核验绝对路径与范围，在同一 Shell 内完成；PowerShell 文件操作优先用 `-LiteralPath`。
-- 工具找不到时先查解析与 PATH：PowerShell 用 `Get-Command <name> -All`，Bash 用 `type -a <name>`。按需检查本机 `D:\runtime\cli`、`mise ls`、`coreutils.exe --list`，不要直接认定未安装；WSL 工具环境另行确认。
+- 搜索文本优先用 `rg`，查找文件用 `rg --files`。
+- PowerShell 优先用原生 cmdlet。后续操作依赖前一步成功时，外部程序按其退出码语义检查 `$LASTEXITCODE`，cmdlet 用 `-ErrorAction Stop` 等机制处理错误。PowerShell 5.1 不支持 `&&`、`||`。
+- 编辑时保留原编码、BOM 状态和换行。PowerShell 读取 UTF-8 文件时指定 `-Encoding UTF8`。在 5.1 中，用该参数写回会添加 BOM。
+- 删除、递归移动或批量覆盖前，核验目标绝对路径和操作范围，并在同一 Shell 内完成。PowerShell 文件操作优先用 `-LiteralPath`。
+- 找不到工具时先查命令解析和 PATH。PowerShell 用 `Get-Command <name> -All`，Bash 用 `type -a <name>`。按需检查 `D:\runtime\cli`、`mise ls`、`coreutils.exe --list`。WSL 内单独确认。
